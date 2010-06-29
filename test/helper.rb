@@ -1,10 +1,7 @@
 require 'rubygems'
-require 'test/unit'
-require 'shoulda'
+require 'riot'
 
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-$LOAD_PATH.unshift(File.dirname(__FILE__))
+$:<< File.join(File.dirname(__FILE__), '..', 'lib')
+$:<< File.dirname(__FILE__)
+
 require 'commissioner'
-
-class Test::Unit::TestCase
-end
